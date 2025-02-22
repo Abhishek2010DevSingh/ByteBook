@@ -11,7 +11,7 @@ export class ProcessEnvProvider implements EnvProvider {
     try {
       this.openAiApiKey = getEnv("OPENAI_API_KEY");
     } catch (error) {
-      console.error("Error loading while .env:", error);
+      console.error("Error while loading .env:", error);
       process.exit(1);
     }
   }
