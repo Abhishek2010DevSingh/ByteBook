@@ -2,6 +2,12 @@
 
 ByteBook is an AI-powered book expert designed to answer questions about books, including summaries, themes, character analysis, and recommendations.
 
+### 🏠 Home Page
+![ByteBook Home Page](public/home.png)
+
+### 📌 App Usage
+![ByteBook Usage](public/using.png)
+
 ## ✨ Features
 - 📖 Provides concise, well-structured, and fact-based answers.
 - 🎭 Adapts responses based on book genre, era, and literary style.
@@ -47,12 +53,6 @@ npm run dev
 
 ## 🤝 Contribution
 Feel free to open issues and submit pull requests to improve ByteBook.
-
-### 🏠 Home Page
-![ByteBook Home Page](public/home.png)
-
-### 📌 App Usage
-![ByteBook Usage](public/using.png)
 
 ## 📜 License
 This project is licensed under the MIT License.
