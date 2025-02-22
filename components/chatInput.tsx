@@ -31,11 +31,11 @@ export default function ChatInput({ handleSubmit, handleChange, isLoading, messa
 	};
 
 	return (
-		<div className="fixed bottom-0 flex w-full flex-col items-center space-y-3 bg-gradient-to-b from-transparent via-gray-100 to-gray-100 dark:via-gray-800 dark:to-gray-900 p-5 pb-3 sm:px-0">
+		<div className="fixed bottom-0 flex w-full flex-col items-center space-y-3  p-5 pb-3 sm:px-0">
 			<form
 				ref={formRef}
 				onSubmit={handleSubmit}
-				className="relative flex w-full max-w-screen-md items-center gap-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-3 shadow-lg"
+				className="relative flex w-full max-w-screen-md items-center gap-2"
 				aria-label="Chat input form"
 			>
 				<div className="relative w-full">
@@ -49,7 +49,7 @@ export default function ChatInput({ handleSubmit, handleChange, isLoading, messa
 						value={message}
 						onChange={handleChange}
 						onKeyDown={handleKeyDown}
-						className="w-full resize-none border-none focus:outline-none overflow-hidden pr-12 bg-transparent text-gray-900 dark:text-gray-100"
+						className="px-4 py-3 min-h-[50px] max-h-[calc(75dvh)] overflow-hidden resize-none rounded-2xl !text-base bg-muted dark:border-zinc-700"
 						rows={1}
 						aria-label="Type your message"
 						aria-live="polite"
