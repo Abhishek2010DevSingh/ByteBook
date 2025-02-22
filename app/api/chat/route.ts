@@ -5,14 +5,14 @@ import { streamText } from 'ai';
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
 
-export async function POST(req: Request) {
-	try {
-		const openai = createOpenAI({
-			apiKey: envProvider.getOpenAiApiKey(),
-			baseURL: "https://models.inference.ai.azure.com",
-		})
-		const { messages } = await req.json();
+const openai = createOpenAI({
+	apiKey: envProvider.getOpenAiApiKey(),
+	baseURL: "https://models.inference.ai.azure.com",
+})
 
+export async function POST(req: Request) {
+	const { messages } = await req.json();
+	try {
 		const result = streamText({
 			model: openai('gpt-4o'),
 			messages,
