@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Message as MessageUi } from "ai";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import ReactMarkdown from "react-markdown";
 
 const Message = ({ message }: { message: MessageUi }) => {
 	const isUser = message.role === "user";
@@ -37,7 +38,9 @@ const Message = ({ message }: { message: MessageUi }) => {
 					}
 				)}
 			>
-				<p className="whitespace-pre-wrap text-[15px] tracking-wide">{message.content}</p>
+				<div className="whitespace-pre-wrap text-[15px] tracking-wide">
+					<ReactMarkdown>{message.content}</ReactMarkdown>
+				</div>
 			</div>
 		</div>
 	);
