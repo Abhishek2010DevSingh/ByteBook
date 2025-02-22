@@ -52,8 +52,7 @@ Feel free to open issues and submit pull requests to improve ByteBook.
 ![ByteBook Home Page](public/home.png)
 
 ### 📌 App Usage
-![ByteBook Usage](path/to/usage-image.png)
-Add demo images here:
+![ByteBook Usage](public/using.png)
 
 ## 📜 License
 This project is licensed under the MIT License.
